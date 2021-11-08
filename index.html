@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<meta name="discription" content="A Javascript music player">
+	<title>music player</title>
+	<!--  -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--  -->
+	<link rel="stylesheet" type="text/css" href="assets/plugins/fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<!--  -->
+	<audio src="" id="audio_source"></audio>
+	<!-- Home section -->
+	<section class="home_section">
+		<!-- img slider -->
+		<div class="img_slider">
+			<img src="assets/img/img1.jpg" class="active">
+			<img src="assets/img/img2.jpg">
+			<img src="assets/img/img3.jpg">
+			<img src="assets/img/img4.jpg">
+		</div>
+		<!-- Playlist -->
+		<hi class="heading">Recently played</hi>
+		<div class="playlist_group">
+			<div class="playlist_card">
+				<img src="assets/img/img4.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Top 100 Best Song</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img2.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">BTS collection</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img3.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Bollywood hits</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img1.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Justin biber</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img4.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Top internaltional</p>
+			</div>
+		</div>
+		<!-- based on your listining -->
+		<hi class="heading">based on your listining</hi>
+		<div class="playlist_group">
+			<div class="playlist_card">
+				<img src="assets/img/img2.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Top 100 Best Song</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img3.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">BTS collection</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img1.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Bollywood hits</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img4.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Justin biber</p>
+			</div>
+			<div class="playlist_card">
+				<img src="assets/img/img2.jpg" class="playlist_card_img">
+				<p class="playlist_card_name">Top internaltional</p>
+			</div>
+		</div>
+	</section>
+	<!-- Music section -->
+	<section class="music_player_section">
+		<div class="top_nav_btn hide">
+			<i class="fas fa-chevron-left close_btn"></i>
+			<i class="fas fa-align-center show_playlist_btn"></i>
+		</div>
+		<h1 class="current_song_name">
+			song 1
+		</h1>
+		<p class="artist_name hide">Artist 1</p>
+		<img src="assets/img/img1.jpg" class="cover hide">
+		<div class="seek_bar_container">
+			<input type="range" class="music_seek_bar" value="0">
+			<div class="flex hide">
+				<p class="current_time">00:00</p>
+				<p class="duration">00:00</p>
+			</div>
+		</div>
+		<div class="controls">
+			<i class="fas fa-redo"></i>
+			<div class="main">
+				<i class="fas fa-backward active"></i>
+				<i class="fas fa-play active"></i>
+				<i class="fas fa-pause"></i>
+				<i class="fas fa-forward active"></i>
+			</div>
+			<input type="range" class="volume_slider" max="1" value="1" step="0.1"></input>
+			<i class="fas fa-volume-up"></i>
+		</div>
+	</section>
+	<!-- Playlist section -->
+	<section class="playlist_section">
+		<i class="fas fa-chevron-left icon"></i>
+		<h1 class="title">playlist</h1>
+		<div class="queue active">
+			<div class="queue_cover">
+				<img src="assets/img/img1.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 1</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img2.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 2</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img3.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 3</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img4.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 4</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img1.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 1</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img2.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 2</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img3.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 3</p>
+		</div>
+		<div class="queue">
+			<div class="queue_cover">
+				<img src="assets/img/img4.jpg" alt="">
+				<i class="fas fa-pause"></i>
+			</div>
+			<p class="name">song 4</p>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="assets/js/data.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</html>
